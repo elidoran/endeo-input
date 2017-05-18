@@ -9,7 +9,7 @@ Helps extract values from a buffer during decoding.
 See packages:
 
 1. [endeo](https://www.npmjs.com/package/endeo)
-3. [debyte](https://www.npmjs.com/package/debyte)
+2. [debyte](https://www.npmjs.com/package/debyte)
 
 
 ## Install
