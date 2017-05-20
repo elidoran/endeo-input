@@ -79,5 +79,5 @@ class Input
 
 
 # export a builder function and the class
-module.exports = (options) -> new Input options
+module.exports = (buffer, index, options) -> new Input buffer, index, options
 module.exports.Input = Input
