@@ -1,3 +1,7 @@
+## 0.2.1 - Released 2017/05/20
+
+1. woops, forgot to change the exported builder function
+
 ## 0.2.0 - Released 2017/05/20
 
 1. remove unneeded scripts
