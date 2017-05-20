@@ -1,16 +1,18 @@
+{Buffer} = require 'buffer'
+
 # a helper class which:
 #  1. wraps a buffer
 #  2. maintains an index into the buffer
 #  3. grabs various bytes as numbers, buffer slice, or string.
 class Input
 
-  constructor: (options) ->
+  constructor: (buffer, index, options) ->
 
     # the input buffer
-    @buffer  = options?.buffer ? Buffer.alloc 0
+    @buffer  = buffer ? options?.buffer ? Buffer.alloc 0
 
     # the start index into `@buffer`
-    @index = options?.index ? 0
+    @index = index ? options?.index ? 0
 
 
   hasByte: -> @index < @buffer.length
