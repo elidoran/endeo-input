@@ -75,6 +75,14 @@ class Input
   # convert specified number of bytes into a string and increment index
   string: (bytes) -> @buffer.toString 'utf8', @index, (@index += bytes)
 
+  # reset the Input with a new buffer/index
+  reset: (buffer, index, options) ->
+
+    # the input buffer
+    @buffer  = buffer ? options?.buffer ? Buffer.alloc 0
+
+    # the start index into `@buffer`
+    @index = index ? options?.index ? 0
 
 
 
